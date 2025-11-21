@@ -1,0 +1,11 @@
+---
+title: "Add x and y"
+output: pdf_document
+---
+
+```{r}
+x <- 1
+y <- 1
+x + y
+"1+1 = 3!!!"
+```
