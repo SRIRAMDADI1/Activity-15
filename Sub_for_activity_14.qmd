@@ -1,0 +1,55 @@
+---
+title: "Activity #14"
+author: "Your Name"
+date: "11-22-2025"
+date-modified: "11-23-2025"
+
+format:
+  pdf: default
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  eval: true
+---
+
+### I'm using the BOAST coding style
+
+
+## Creating the Dataset
+
+The first code block generates a small data frame that contains five values for 'x' and five corresponding values for 'y'. This example dataset is simple enough to illustrate the concepts but still allows for a meaningful visualization. By examining the values, we can begin to think about whether any patterns or trends might appear in a plot.
+
+```{r}
+#| label: load-data
+#| tbl-cap: "A small example dataset"
+
+# Create a simple data frame
+df <- data.frame(
+  x = 1:5,
+  y = c(3, 7, 2, 9, 5)
+)
+
+df
+```
+
+## Creating the Visualization
+
+The next code block creates a scatterplot that displays the relationship between 'x' and 'y' in the dataset. Scatterplots are useful for examining how two numerical variables relate to each other. Even in this small example, we can see variation in the y values that does not follow a straight-line pattern. This helps demonstrate how plots can visually communicate the structure of data.
+
+
+```{r}
+# label: scatter-plot
+# fig-cap: "A basic scatterplot of x vs y"
+# fig-alt: "Scatterplot showing points of y values against x values"
+
+library(ggplot2)
+
+ggplot(df, aes(x, y)) +
+  geom_point() +
+  labs(
+    title = "Example Visualization",
+    alt = "Scatterplot with five points showing the relationship between x and y"
+  )
+```
