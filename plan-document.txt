@@ -1,0 +1,19 @@
+Listed here is the general plan for this repo:
+
+Goals:
+To make a practice repository to learn and implement the basic and necessary functions of github.
+
+Needs:
+Obviously a github account, make a repository, have github desktop for commits.
+
+Steps:
+- Make a repository
+- Add a dev branch
+- Add a test file and commit
+- Raise at least 2 issues and fix them, involve them in commit messages
+- Fill out the README
+- Make a plan pdf_document
+- Make a QMD from scratch since I did not do Activity 14
+- Include an output file of that QMD
+- Make sure the QMD meets all requirements
+- Include a coding style
